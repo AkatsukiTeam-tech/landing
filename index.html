@@ -1,457 +1,647 @@
-<!doctype html>
-<html>
-    <head>
-        <title>BilimLab</title>
-        <meta charset="utf-8">
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-    </head>
-    <body>
-        <header>
-            <img class="logo" src="img/logo.png" alt="logo">
-            <nav>
-                <ul class="nav_links">
-                    <li><a href="#">Курстар</a></li>
-                    <li><a href="#">Мұғалімдер</a></li>
-                    <li><a href="#">Басты</a></li>
-                </ul>
-            </nav>
-            <a class="enter_btn" href="#"><button>Кіру</button></a>
-        </header>
-        <div class="container_info1">
-           <div class="inner1">
-                <p class="child2">Онлайн мектеп</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width = device-width">
 
-                <h1><span class="child1">Bilim</span><span >Lab онлайн мектебі</span></h1>
+    <!-- шрифт -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <!-- маски на input tel -->
+    <script src="https://cdn.jsdelivr.net/npm/inputmask/dist/inputmask.min.js"></script>
+    <!-- axios -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 
-                <p class="child3">Сізге ыңғайлы форматта дайындалуға және <br> сынақтардан сәтті өтуге көмектесеміз</p>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>BilimLab</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <!-- header -->
 
-                <div class="btn_cont">
-                    <a class="enter_btn" href="#"><button class="btn1">Тегін тіркелу</button></a>
-                    <a class="enter_btn" href="#"><button class="btn2">Толығырақ білу</button></a>
-                </div>
-           </div>
-
-           <div>
-                <h3 class="child4">Мақсатыңызға байланысты сабақтарды таңдаңыз</h3>
-           </div>
-
-           <div class="card_container">
-                <div class="card">
-                    <img src="img/books.png" alt="books">
-                    <div class="info_container">
-                        <h4><b>ҰБТ</b></h4>
-                        <hr>
-                        <p>Барлық пәндер бойынша <br> ҰБТ-ға толық дайындық</p>
-                    </div>
-                </div> 
-                <div class="card">
-                    <img src="img/teacher.png" alt="teacher">
-                    
-                    <div class="info_container">
-                        <h4><b>Магистратура</b></h4>
-                        <hr>
-                        <p>Қазақстанда магистратураға түсу <br> үшін сынақтарға дайындық</p>
-                    </div>
-                </div> 
-                <div class="card">
-                    <img src="img/bag.png" alt="bag">
-                    
-                    <div class="info_container">
-                        <h4><b>Мұғалімдер</b></h4>
-                        <hr>
-                        <p>Квалификацияңызды көтеріп,<br> квал тест тапсыруға<br> көмектесеміз</p>
-                    </div>
-                </div> 
-           </div>
+    <header class="header">
+        <div class="header__body">
+            <img class="header__logo" src="img/logo.png" alt="logo">
+            <div class="header__inner">
+                <nav class="header__nav">
+                    <ul class="header__nav-list">
+                        <li class="header__nav-item"><a class="header__nav-link" href="#">Курстар</a></li>
+                        <li class="header__nav-item"><a class="header__nav-link" href="#">Мұғалімдер</a></li>
+                        <li class="header__nav-item"><a class="header__nav-link" href="#">Басты</a></li>
+                    </ul>
+                </nav>
+                
+                <a class="header__btn-link" href="#"><button class="header__body-btn btn">Кіру</button></a>
+            </div>
         </div>
+    </header>
 
-        <div class="container_info2">
+    <!-- initial-part -->
+    <div class="initial-part">
+        <div class="initial-part__body">
+            <div class="initial-part__upper">
+                <p class="initial-part__text blue">Онлайн мектеп</p>
 
-          <h1 class="thisTV"><span>BilimLab</span><span class="child1"> - бұл</span></h1>
+                <div>
+                    <h1 class="initial-part__title"><span>Bilim</span><span class="initial-part__title-text blue">Lab онлайн мектебі</span></h1>
 
-            <div class="card_container">
-                <div class="card2">
-                    <div class="gth">
-                        <div class="card_header">
-                            <div class="icon_container">
-                                <img src="img/icon1.png" alt="icon1" class="icons">
-                            </div>
-                            <h2>Білікті мұғалімдер</h2>
-                        </div>
-
-                        <p class="greenP">Біздің мұғалімдер өз пәнін өте <br> жақсы меңгерген, ұстаздық <br> тәжірибесі мол, жоғары білікті және <br> тәжірибелі мамандар</p>
-                    </div>
-                    <p class="blueP">Толығырақ ></p>
+                    <p class="initial-part__subtitle green">Сізге ыңғайлы форматта дайындалуға және сынақтардан сәтті өтуге көмектесеміз</p>
                 </div>
-                <div class="card2">
-                    <div class="card_header">
-                        <div class="icon_container">
-                            <img src="img/icon2.png" alt="icon2" class="icons">
-                        </div>
-                        <h2>Толық дайындық</h2>
-                    </div>
-    
-                    <p class="greenP">Біз емтиханға толық, барлық пән <br> бойынша дайындықты ұсынамыз. <br>Сонымен қатар емтиханға <br>дайындық материалдарын</p>
-    
-                    <p class="blueP">Толығырақ ></p>
+                
+
+                <div class="initial-part__upper-buttons">
+                    <a href="#"><button class="btn">Тегін тіркелу</button></a>
+                    <a href="#"><button class="btn white">Толығырақ білу</button></a>
                 </div>
-                <div class="card2">
-                    <div class="card_header">
-                        <div class="icon_container">
-                            <img src="img/icon3.png" alt="icon3" class="icons">
-                        </div>
-                        <h2>Арнайы платформа</h2>
+            </div>
+            <div class="initial-part__lower">
+                <h2 class="initial-part__lower-title">Мақсатыңызға байланысты сабақтарды таңдаңыз</h2>
+
+                <div class="initial-part__cards">
+                    <div class="initial-part__card card">
+                        <img src="img/books.png" alt="books" class="initial-part__card-image">
+                        <h3 class="initial-part__card-title">ҰБТ</h3>
+                        <hr class="initial-part__card-line">
+                        <p class="initial-part__card-subtitle green">Барлық пәндер бойынша ҰБТ-ға толық дайындық</p>
                     </div>
-    
-                    <p class="greenP">Біз сабақтарға оқушылар мен <br> мұғалімдердің қажеттіліктерін <br> ескере отырып жасалған арнайы <br>платформаны қолданамыз</p>
-                    <p class="blueP">Толығырақ ></p>
+                    <div class="initial-part__card card">
+                        <img src="img/teacher.png" alt="teacher" class="initial-part__card-image">
+                        <h3 class="initial-part__card-title">Магистратура</h3>
+                        <hr class="initial-part__card-line">
+                        <p class="initial-part__card-subtitle green">Қазақстанда магистратураға түсу үшін сынақтарға дайындық</p>
+                    </div>
+                    <div class="initial-part__card card">
+                        <img src="img/bag.png" alt="bag" class="initial-part__card-image">
+                        <h3 class="initial-part__card-title">Мұғалімдер</h3>
+                        <hr class="initial-part__card-line">
+                        <p class="initial-part__card-subtitle green">Квалификацияңызды көтеріп, квал тест тапсыруға көмектесеміз</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--checker-part -->
+
+    <div class="checker">
+        <div class="checker__body">
+            <h1 class="cheker__title"><span class="cheker__title-text blue" >BilimLab</span><span > - бұл</span></h1>
+
+            <div class="checker__cards">
+                <div class="checker__card card active">
+                    <div class="checker__card-header">
+                        <div class="checker__card-image">
+                            <img src="img/icon1.svg" alt="icon1" class="icons">
+                        </div>
+                        <h2 class="checker__card-title">Білікті мұғалімдер</h2>
+                    </div>
+                    <div class="checker__card-info">
+                        <p class="checker__card-text green">Біздің мұғалімдер өз пәнін өте жақсы меңгерген, ұстаздық тәжірибесі мол, жоғары білікті және тәжірибелі мамандар</p>
+                   
+                        
+                    </div>
+                    <p class="checker__card-more blue">Толығырақ ></p>
+                </div>
+                <div class="checker__card card">
+                    <div class="checker__card-header">
+                        <div class="checker__card-image">
+                            <img src="img/icon2.svg" alt="icon2" class="icons">
+                        </div>
+                        <h2 class="checker__card-title">Толық дайындық</h2>
+                    </div>
+                    <div class="checker__card-info">
+                        <p class="checker__card-text green">Біз емтиханға толық, барлық пән бойынша дайындықты ұсынамыз. Сонымен қатар емтиханға дайындық материалдарын</p>
+                   
+                        <p class="checker__card-more blue">Толығырақ ></p>
+                    </div>
+                </div>
+                <div class="checker__card card">
+                    <div class="checker__card-header">
+                        <div class="checker__card-image">
+                            <img src="img/icon3.svg" alt="icon3" class="icons">
+                        </div>
+                        <h2 class="checker__card-title">Арнайы платформа</h2>
+                    </div>
+                    <div class="checker__card-info">
+                        <p class="checker__card-text green">Біз сабақтарға оқушылар мен мұғалімдердің қажеттіліктерін ескере отырып жасалған арнайы платформаны қолданамыз</p>
+                   
+                        <p class="checker__card-more blue">Толығырақ ></p>
+                    </div>
                 </div>
             </div>
 
-            <div class="container_dots">
-              <span class="dot"></span>
-              <span class="dot"></span>
-              <span class="dot"></span>
+
+            <div class="checker_dots">
+                <span class="checker_dot active"></span>
+                <span class="checker_dot"></span>
+                <span class="checker_dot"></span>
             </div>
         </div>
-        <div class="slider_container">
-           
-            <div class="wrapper">
+    </div>
+
+    <!--slider_part -->
     
-                <div class="carousel">
-                    <img src="img/image 4.png" alt="image 1">
-                    <img src="img/image 5.png" alt="image 2">
-                    <img src="img/image 6.png" alt="image 3">
-                    <img src="img/image 25.png" alt="image 4">
-                    <img src="img/image 26.png" alt="image 5">
-                    <img src="img/image 27.png" alt="image 6">
-                    <img src="img/image 8.jpg" alt="image 7">
-                    <img src="img/image 9.png" alt="image 8">
-                </div>
-
+    <div class="slider">
+        <div class="slider__wrapper">
+            <div class="slider__carousel">
+                <div class="slider__carousel-item"><img src="img/image 4.png" alt="image 1"></div>
+                <div class="slider__carousel-item"><img src="img/image 5.png" alt="image 2"></div>
+                <div class="slider__carousel-item"><img src="img/image 6.png" alt="image 3"></div>
+                <div class="slider__carousel-item"><img src="img/image 25.png" alt="image 4"></div>
+                <div class="slider__carousel-item"><img src="img/image 26.png" alt="image 5"></div>
+                <div class="slider__carousel-item"><img src="img/image 27.png" alt="image 6"></div>
+                <div class="slider__carousel-item"><img src="img/image 8.png" alt="image 7"></div>
+                <div class="slider__carousel-item"><img src="img/image 9.png" alt="image 8"></div>
             </div>
-           
         </div>
-        
-        
+    </div>
 
+    <!--registration_part -->
 
-        <div class="container_reg">
-            <div>
-                <div class="overlay">
-                    <img src="img/bell-dynamic-color.png" alt="bell">
+    <div class="registration">
+        <div class="registration__body">
+            <div class="registration__main">
+                <div class="registration__overlay">
+                    <img class="registration__img" src="img/bell-dynamic-color.png" alt="bell">
                 </div>
-                <div class="reg_panel">
-                    <input type="text" placeholder="ФИО" class="input1"/><br>
-                    <input type="text" placeholder="Телефон" class="input2"/><br>
-                    <Button class="reg-btn">Тегін дайындықты бастау</Button>
-                </div>
+                <div class="registration__main-panel panel">
+                    <input type="text" placeholder="ФИО" class="panel-input" id="input1"/><br>
+                    <input type="text" placeholder="Телефон" class="panel-input telephone" id="input2"/><br>
+
+                    <p class="error_message"></p>
+                    <Button class="panel-btn btn yellow">Тегін дайындықты бастау</Button>
+                </div> 
             </div>
             
-            <div class="inf_panel">
-                <h3>Тегін түрде қатысып,<br> шешім қабылдаңыз</h3>
-                <p>Бірінші тегін сабаққа қатысып,<br> сабақтарымыздың қалай өтетінін <br> көріңіз</p>
+            <div class="registration__info">
+                <h3 class="registration__info-title">Тегін түрде қатысып, шешім қабылдаңыз</h3>
+                <p class="registration__text green">Бірінші тегін сабаққа қатысып, сабақтарымыздың қалай өтетінін көріңіз</p>
             </div>
         </div>
+    </div>
 
-        <div class="container_grant">
-          <div class="grant">
-              <h3>Грантқа түсу мүмкіндігіңді анықта</h3>
-              <select name="subject1" id="subject1" required>
-                <option value="" disabled selected hidden>Бірінші бейіндік пән</option>
-                <option value="math">Математика</option>
-                <option value="history">Тарих</option>
-                <option value="biology">Биология</option>
-                <option value="english">Шет тілі</option>
-                <option value="literature">Оқыту тілі және әдебиет</option>
-                <option value="geog">география</option>
-                <option value="chemistry">Химия</option>
-                <option value="art">Шығармашылық емтихан</option>
-              </select>
-              <select name="subject2" id="subject2" required>
-                <option value="" disabled selected hidden>Екінші бейіндік пән</option>
-                <option value="physics">Физика</option>
-                <option value="geog">География</option>
-                <option value="chemistry">Химия</option>
-                <option value="history">Тарих</option>
-                <option value="english">Шет тілі</option>
-                <option value="rights">Адам.Қоғам.Құқық</option>
-              </select>
-              <div class="quota">
-                <input type="checkbox"/>
-                <p>Ауыл квотасы</p>
-              </div>
-              <div class="point">
-                <p>ҰБТ-дан жинаған балл</p>
-                <p class="score">80</p>
-              </div>
-              <div>
-                <input type="range" min="50" max="140" value="80" class="slider" id="myRange">
-                <button id="openModalBtn">Анализ</button>
-              </div>
-              
-          </div>
-          <div class="container_cup">
-            <img src="img/cup.png" alt="cup">
-          </div>
-        </div>
-        
-        <div class="container_info3">
-            <h1 class="thisTV"><span>Неліктен </span><span class="child1"> BilimLab</span>?</h1>
+    <!-- analysis part -->
 
-            <div class="container_for_part3">
-                <div class="cont_two_sqr">
-                    <div class="pink-div"><img src="img/Globe.png" alt="globe"></div>
-                    <div class="blue-div"></div>
+    <div class="analysis">
+        <div class="analysis__body">
+            <div class="analysis__main">
+                <h4 class="analysis__title">Грантқа түсу мүмкіндігіңді анықта</h4>
+                <select class="analysis__select" name="subject1" id="subject1" required>
+                  <option value="" disabled selected hidden>Бірінші бейіндік пән</option>
+                  <option value="math">Математика</option>
+                  <option value="history">Тарих</option>
+                  <option value="biology">Биология</option>
+                  <option value="english">Шет тілі</option>
+                  <option value="literature">Оқыту тілі және әдебиет</option>
+                  <option value="geog">география</option>
+                  <option value="chemistry">Химия</option>
+                  <option value="art">Шығармашылық емтихан</option>
+                </select>
+                <select class="analysis__select" name="subject2" id="subject2" required>
+                  <option value="" disabled selected hidden>Екінші бейіндік пән</option>
+                  <option value="physics">Физика</option>
+                  <option value="geog">География</option>
+                  <option value="chemistry">Химия</option>
+                  <option value="history">Тарих</option>
+                  <option value="english">Шет тілі</option>
+                  <option value="rights">Адам.Қоғам.Құқық</option>
+                </select>
+                <div class="analysis__quota">
+                  <input class="analysis__checkbox" type="checkbox"/>
+                  <p class="analysis__checkbox-text">Ауыл квотасы</p>
                 </div>
-                <div class="inf_panel2">
-                    <h3>Сабақтар тікелей <br> эфирде өтеді</h3>
-                    <p>Сабақтар біздің арнайы платформада тікелей эфирде <br>өтетін болады. Онлайн сабақтар кезінде мұғалім мен <br>оқушылар бір-бірімен тікелей сөйлесіп,<br> материалдарды талқылап, бір-біріне сұрақтар қоя<br> алады.Мұғалім оқушыларға материалды түсіндіру үшін<br> тақтаны пайдаланады немесе презентациялар<br> көрсете алады. </p>
+                <div class="analysis__scores">
+                  <p class="analysis__scores-text">ҰБТ-дан жинаған балл</p>
+                  <p class="analysis__score">80</p>
                 </div>
-                  
-            </div>
-            <div  class="container_for_part3">
-
-                <div class="inf_panel3">
-                    <h3>Тапсырмалар мен үй <br>жұмыстарын жеке <br>тексереміз</h3>
-                    <p>Тапсырмалар мен үй тапсырмасын мұғалім <br>немесе оқу платформасы да тексере алады.<br> Бұл әдетте тапсырма түріне байланысты.</p>
-                </div>                
-                <div class="cont_two_sqr">
-                    <div class="sky-div"><img src="img/Pie Chart.png" alt="pie"></div>
-                    <div class="orange-div"></div>
+                <div class="analysis__ranges">
+                  <input type="range" min="50" max="140" value="80" class="analysis__ranges" id="myRange">
+                  <button class="analysis__btn btn" id="openModalBtn">Анализ</button>
                 </div>
                 
             </div>
-            <div  class="container_for_part3">
-                <div class="cont_two_sqr">
-                    <div class="green-div"><img src="img/Smartphone.png" alt="Smartphone"></div>
-                    <div class="pepper-div"></div>
+            <div class="analysis__image">
+              <img src="img/cup.png" alt="cup">
+            </div>
+        </div>
+    </div>
+
+<!--  infoblock  part-->
+
+    <div class="infoblock">
+        <div class="infoblock__body">
+            <h1 class="infoblock__title"><span>Неліктен </span><span  class="infoblock__title-text blue" >BilimLab</span>?</h1>
+
+            <div class="infoblock__contentfield">
+                <div class="infoblock__shapes">
+                    <div class="infoblock__shape pink"><img  class="infoblock__img" src="img/Globe.png" alt="globe"></div>
+                    <div class="infoblock__shape darkerblue smoothed"></div>
                 </div>
-                <div class="inf_panel2">
-                    <h3>Куратор сізге екі сағат<br> ішінде жауап береді</h3>
-                    <p>Әдетте кураторлар сізге мүмкіндігінше жылдам <br>жауап беруге тырысады, сондықтан сіз бірнеше <br>сағат ішінде жауап күте аласыз. Сұрауыңыз <br>шұғыл болса, жылдамырақ жауап алу үшін <br>техникалық қолдау қызметіне тікелей<br> хабарласуыңызға болады.</p>
+                <div class="infoblock__textfild">
+                    <h3 class="infoblock__label">Сабақтар тікелей эфирде өтеді</h3>
+                    <p class="infoblock__text green">Сабақтар біздің арнайы платформада тікелей эфирде өтетін болады. Онлайн сабақтар кезінде мұғалім мен оқушылар бір-бірімен тікелей сөйлесіп, материалдарды талқылап, бір-біріне сұрақтар қоя алады.Мұғалім оқушыларға материалды түсіндіру үшін тақтаны пайдаланады немесе презентациялар көрсете алады. </p>
+                </div>
+            </div>
+            <div class="infoblock__contentfield">
+                <div class="infoblock__textfild reverse">
+                    <h3 class="infoblock__label">Тапсырмалар мен үй жұмыстарын жеке тексереміз</h3>
+                    <p class="infoblock__text  green">Тапсырмалар мен үй тапсырмасын мұғалім немесе оқу платформасы да тексере алады. Бұл әдетте тапсырма түріне байланысты.</p>
+                </div>
+                <div class="infoblock__shapes">
+                    <div class="infoblock__shape skyblue"><img  class="infoblock__img" src="img/Pie Chart.png" alt="Pie"></div>
+                    <div class="infoblock__shape orange smoothed"></div>
+                </div>
+               
+            </div>
+            <div class="infoblock__contentfield">
+                <div class="infoblock__shapes">
+                    <div class="infoblock__shape grassgreen"><img  class="infoblock__img" src="img/Smartphone.png" alt="Smartphone"></div>
+                    <div class="infoblock__shape red smoothed"></div>
+                </div>
+                <div class="infoblock__textfild">
+                    <h3 class="infoblock__label">Куратор сізге екі сағат ішінде жауап береді</h3>
+                    <p class="infoblock__text green">Әдетте кураторлар сізге мүмкіндігінше жылдам жауап беруге тырысады, сондықтан сіз бірнеше сағат ішінде жауап күте аласыз. Сұрауыңыз шұғыл болса, жылдамырақ жауап алу үшін техникалық қолдау қызметіне тікелей хабарласуыңызға болады.</p>
                 </div>
             </div>
         </div>
+    </div>
 
-        
-        <div class="continer_accordion">
-            <h1 class="thisTV"><span>Жиі қойылатын сұрақтар</span></h1>
 
-            <div class="accordion">
-                <div class="accordion-item" id="accordion-item">
-                  <div class="accordion-header">Платформаға қалай кіреміз?
-                        <img src="img/Vector.png" alt="" class="arrow">
-                  </div>
-                  <div class="accordion-content">
-                    <p>Онлайн мектеп платформасына доступ курсқа тіркелгеннен кейін беріледі. Тіркелу үшін сізден аты-жөні,<br> тегі, электрондық пошта мекенжайы және т.б. сияқты жеке мәліметтеріңізбен тіркеу формасын толтыру<br> талап етілуі мүмкін. Кейбір жағдайларда тіркеуді растау қажет болуы мүмкін, мысалы, электрондық<br> поштаңызға жіберілген сілтеме арқылы. Тіркелгеннен кейін сіз тіркелу барысында жасалған логин мен<br> пароль арқылы онлайн мектеп платформасына қол жеткізе аласыз. </p>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                  <div class="accordion-header">Ыңғайлы оқу үшін қандай интернет және қандай құрылғы қажет?
-                    <img src="img/Vector.png" alt="" class="arrow">
-                  </div>
-                  <div class="accordion-content">
-                    <p> Онлайн мектепте ыңғайлы білім алу үшін жақсы интернет және жұмыс істеуге арналған ең төменгі талаптарға жауап беретін құрылғы қажет.</p> <br> <p>Бейне және аудио ағындары кідіріссіз жасауы үшін жүктеп алу жылдамдығы кемінде 5 Мбит/с және жүктеп салу жылдамдығы кемінде 1 Мбит/с болуы қажет. Wi-Fi желісін пайдалансаңыз, сигнал жоғалу және баяулау қаупін азайту үшін құрылғыңыз роутерге жеткілікті жақын екеніне көз жеткізіңіз.</p> <br> <p>Құрылғыға келетін болсақ, компьютерді де, смартфондар немесе планшеттер сияқты мобильді құрылғыларды да онлайн оқу үшін пайдалануға болады.</p>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                  <div class="accordion-header">Бұл оқу форматы мен үшін дұрыс па?
-                    <img src="img/Vector.png" alt="" class="arrow">
-                  </div>
-                  <div class="accordion-content">
-                    <p>Онлайн оқыту форматы жасқа, білім деңгейіне және тұрғылықты жеріне қарамастан барлығына дерлік<br> қолайлы. Онлайн оқытудың сабақ кестесінің икемділігі, әлемнің кез келген нүктесінен қол жетімділігі,<br> курстар мен оқу бағдарламаларының кең ауқымы, әлемнің түкпір-түкпірінен келген мұғалімдермен<br> және студенттермен тіл табысу мүмкіндігі, сондай-ақ оқытуды жақсарту мүмкіндігі сияқты бірқатар<br> артықшылықтары бар.  </p>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                    <div class="accordion-header">Онлайн сабаққа қатыса алмасам ше?
-                      <img src="img/Vector.png" alt="" class="arrow">
+    <div class="accordion">
+        <div class="accordion__body">
+            <h1 class="accordion__title">Жиі қойылатын сұрақтар</h1>
+            <div class="accordion__items">
+                <div class="accordion__item" id="accordion-item">
+                    <div class="accordion__header">Платформаға қалай кіреміз?
+                        <img  class="accordion__header-img" src="img/Vector.svg" alt="">
                     </div>
-                    <div class="accordion-content">
-                      <p>Егер сіз онлайн сабаққа қатыса алмасаңыз, онда көмектесетін бірнеше әрекет нұсқалары бар:</p><br>
+                    <div class="accordion__content">
+                        <p>Онлайн мектеп платформасына доступ курсқа тіркелгеннен кейін беріледі. Тіркелу үшін сізден аты-жөні, тегі, электрондық пошта мекенжайы және т.б. сияқты жеке мәліметтеріңізбен тіркеу формасын толтыру талап етілуі мүмкін. Кейбір жағдайларда тіркеуді растау қажет болуы мүмкін, мысалы, электрондық поштаңызға жіберілген сілтеме арқылы. Тіркелгеннен кейін сіз тіркелу барысында жасалған логин мен пароль арқылы онлайн мектеп платформасына қол жеткізе аласыз. </p>
+                    </div>
+                </div>
+                
+                <div class="accordion__item" id="accordion-item">
+                    <div class="accordion__header">Ыңғайлы оқу үшін қандай интернет және қандай құрылғы қажет?
+                        <img  class="accordion__header-img" src="img/Vector.svg" alt="">
+                    </div>
+                    <div class="accordion__content">
+                        <p> Онлайн мектепте ыңғайлы білім алу үшін жақсы интернет және жұмыс істеуге арналған ең төменгі талаптарға жауап беретін құрылғы қажет.</p> <p>Бейне және аудио ағындары кідіріссіз жасауы үшін жүктеп алу жылдамдығы кемінде 5 Мбит/с және жүктеп салу жылдамдығы кемінде 1 Мбит/с болуы қажет. Wi-Fi желісін пайдалансаңыз, сигнал жоғалу және баяулау қаупін азайту үшін құрылғыңыз роутерге жеткілікті жақын екеніне көз жеткізіңіз.</p>  <p>Құрылғыға келетін болсақ, компьютерді де, смартфондар немесе планшеттер сияқты мобильді құрылғыларды да онлайн оқу үшін пайдалануға болады.</p>
+                    </div>
+                </div>
+                <div class="accordion__item" id="accordion-item">
+                    <div class="accordion__header">Бұл оқу форматы мен үшін дұрыс па?
+                        <img  class="accordion__header-img" src="img/Vector.svg" alt="">
+                    </div>
+                    <div class="accordion__content">
+                        <p>Онлайн оқыту форматы жасқа, білім деңгейіне және тұрғылықты жеріне қарамастан барлығына дерлік қолайлы. Онлайн оқытудың сабақ кестесінің икемділігі, әлемнің кез келген нүктесінен қол жетімділігі, курстар мен оқу бағдарламаларының кең ауқымы, әлемнің түкпір-түкпірінен келген мұғалімдермен және студенттермен тіл табысу мүмкіндігі, сондай-ақ оқытуды жақсарту мүмкіндігі сияқты бірқатар артықшылықтары бар.  </p>
+                    </div>
+                </div>
+                <div class="accordion__item" id="accordion-item">
+                    <div class="accordion__header">Онлайн сабаққа қатыса алмасам ше?
+                        <img  class="accordion__header-img" src="img/Vector.svg" alt="">
+                    </div>
+                    <div class="accordion__content">
+                        <p>Егер сіз онлайн сабаққа қатыса алмасаңыз, онда көмектесетін бірнеше әрекет нұсқалары бар:</p>
 
-                      <p>Онлайн сынып жазбасын сұраңыз. Платформа сізге ыңғайлы уақытта сабақтарды көруге мүмкіндік береді. Егер сіз нақты уақытта қатыса алмасаңыз, куратордан сабақ жазбасын сұраңыз.</p><br>
-                      <p>Мұғалімге хабарласыңыз. Егер сізде интернетке немесе құрылғыға кіру проблемалары болса, мұғалімге хабарласып, мәселе туралы хабарлаңыз. Мүмкін, мұғалім басқа уақытта сабақ өткізу немесе байланыстың басқа әдісін қолдану сияқты балама нұсқаны ұсына алады.</p><br>
-                      <p>Куратормен байланысыңыз. Егер сізде онлайн сабаққа қатысу немесе материалдарға қол жеткізу мәселесі болса, жеке кураторыңызға хабарласыңыз. Куратор оқуға байланысты мәселелерді шешуге және сұрақтарыңызға жауап беруге көмектеседі.</p>
+                        <p>Онлайн сынып жазбасын сұраңыз. Платформа сізге ыңғайлы уақытта сабақтарды көруге мүмкіндік береді. Егер сіз нақты уақытта қатыса алмасаңыз, куратордан сабақ жазбасын сұраңыз.</p>
+                        <p>Мұғалімге хабарласыңыз. Егер сізде интернетке немесе құрылғыға кіру проблемалары болса, мұғалімге хабарласып, мәселе туралы хабарлаңыз. Мүмкін, мұғалім басқа уақытта сабақ өткізу немесе байланыстың басқа әдісін қолдану сияқты балама нұсқаны ұсына алады.</p>
+                        <p>Куратормен байланысыңыз. Егер сізде онлайн сабаққа қатысу немесе материалдарға қол жеткізу мәселесі болса, жеке кураторыңызға хабарласыңыз. Куратор оқуға байланысты мәселелерді шешуге және сұрақтарыңызға жауап беруге көмектеседі.</p>
                     </div>
-                  </div>
-                  <div class="accordion-item">
-                    <div class="accordion-header">Мен ата-анамын, баламның үлгерімін қалай білуге ​​болады?
-                      <img src="img/Vector.png" alt="" class="arrow">
+                </div>
+                <div class="accordion__item" id="accordion-item">
+                    <div class="accordion__header">Мен ата-анамын, баламның үлгерімін қалай білуге ​​болады?
+                        <img  class="accordion__header-img" src="img/Vector.svg" alt="">
                     </div>
-                    <div class="accordion-content">
-                      <p>Егер сіз ата-ана болсаңыз және балаңыздың онлайн мектептегі үлгерімі туралы білгіңіз келсе, онда<br> платформаға кіріп балаңыздың академиялық үлгерімін, үй тапсырмасы мен тест бағаларын және<br> мұғалімнің пікірлерін көре аласыз.<br>
-                        Немесе куратормен байланысып балаңыздың үлгерімі туралы сұрай аласыз.</p>
+                    <div class="accordion__content">
+                        <p>Егер сіз ата-ана болсаңыз және балаңыздың онлайн мектептегі үлгерімі туралы білгіңіз келсе, онда платформаға кіріп балаңыздың академиялық үлгерімін, үй тапсырмасы мен тест бағаларын және мұғалімнің пікірлерін көре аласыз.
+                            Немесе куратормен байланысып балаңыздың үлгерімі туралы сұрай аласыз.</p>
                     </div>
-                  </div>
-                  <div class="accordion-item">
-                    <div class="accordion-header">Сіздің курстарыңыз менің қаламдағы басқа курстарға қарағанда арзанырақ, бірақ сізде<br> Қазақстанда ең жақсы мұғалімдер бар. Бұл қалай?
-                      <img src="img/Vector.png" alt="" class="arrow">
+                </div>
+
+                <div class="accordion__item" id="accordion-item">
+                    <div class="accordion__header">Сіздің курстарыңыз менің қаламдағы басқа курстарға қарағанда арзанырақ, бірақ сізде Қазақстанда ең жақсы мұғалімдер бар. Бұл қалай?
+                        <img  class="accordion__header-img" src="img/Vector.svg" alt="">
                     </div>
-                    <div class="accordion-content">
-                      <p>Біріншіден, біз онлайн мектеп болғандықтан кеңселерді ұстауға, әкімшілік және оқытушылық<br> қызметкерлердің жалақысына және физикалық кеңістіктерге қызмет көрсетуге байланысты үлкен<br> үстеме шығындар жоқ. Бұл курстардың құнын төмендетуге және оларды көбірек оқушылар үшін<br> қолжетімді етуге мүмкіндік береді.<br>
-                        Екіншіден, біз географиялық шеңбермен шектелмей, мұғалімдер мен сарапшылардың кең базасына қол<br> жеткізе аламыз. Бұл бізге әртүрлі елдер мен аймақтардан ең жақсы мұғалімдерді жалдауға мүмкіндік<br> береді, бұл оқу сапасына әсер етіп, оның тиімділігін арттырады.<br>
-                        Сондай-ақ, онлайн мектептер оқудың сапасы мен нәтижелеріне әсер етуі мүмкін тиімді және<br> интерактивті оқу процесін қамтамасыз ете алатын озық оқыту технологиялары мен әдістемелерін<br> пайдалана алады.</p>
-                    </div>
-                  </div>
+                    <div class="accordion__content">
+                        <p>Біріншіден, біз онлайн мектеп болғандықтан кеңселерді ұстауға, әкімшілік және оқытушылық қызметкерлердің жалақысына және физикалық кеңістіктерге қызмет көрсетуге байланысты үлкен үстеме шығындар жоқ. Бұл курстардың құнын төмендетуге және оларды көбірек оқушылар үшін қолжетімді етуге мүмкіндік береді.
+                        Екіншіден, біз географиялық шеңбермен шектелмей, мұғалімдер мен сарапшылардың кең базасына қол жеткізе аламыз. Бұл бізге әртүрлі елдер мен аймақтардан ең жақсы мұғалімдерді жалдауға мүмкіндік береді, бұл оқу сапасына әсер етіп, оның тиімділігін арттырады.
+                        Сондай-ақ, онлайн мектептер оқудың сапасы мен нәтижелеріне әсер етуі мүмкін тиімді және интерактивті оқу процесін қамтамасыз ете алатын озық оқыту технологиялары мен әдістемелерін пайдалана алады.</p> 
+                </div>
             </div>
         </div>
+    </div>
+    </div>
 
-        <div class="container_reg2">
-            <div>
-                <div class="reg_panel2">
-                    <input type="text" placeholder="ФИО" class="input1"/><br>
-                    <input type="text" placeholder="Телефон" class="input2"/><br>
-                    <Button class="reg-btn">Тегін дайындықты бастау</Button>
+
+    
+    <div class="reregistration">
+        <div class="reregistration__body">
+            <div class="reregistration__main">
+                <div class="reregistration__panel panel">
+                    <input type="text" placeholder="ФИО" class="panel-input" id="input3"/><br>
+                    <input type="text" placeholder="Телефон" class="panel-input telephone"  id="input4"/><br>
+                    <p class="error_message1"></p>
+                    <Button class="panel-btn btn yellow">Форманы жіберу</Button>
                 </div>
             </div>
             
-            <div class="inf_panel">
-                <h3>Сұрақтарың қалды ма?</h3>
-                <ul>
-                    <li>Форманы толтырып жіберіңіз</li>
-                    <li>Біздің қоңырауды күтіңіз</li>
-                    <li>Өз сұрақтарыңызды койыңыз, ал біз барлық<br> сұрақтарыңызға жауап береміз</li>
+            <div class="reregistration__info">
+                <h3  class="reregistration__info-header">Сұрақтарың қалды ма?</h3>
+                <ul class="reregistration__list">
+                    <li class="reregistration__list-item">
+                        <div class="dotes is-dotted"></div>
+                        Форманы толтырып жіберіңіз
+                    </li>
+                    <li class="reregistration__list-item">
+                        <div class="dotes is-dotted"></div>
+                        Біздің қоңырауды күтіңіз
+                    </li>
+                    
+                    <li class="reregistration__list-item">
+                        <div class="dotes"></div>
+                        Өз сұрақтарыңызды койыңыз, ал біз барлық сұрақтарыңызға жауап береміз
+                    </li>
                 </ul>
             </div>
         </div>
+    </div>
 
-
-        <div class="container_footer">
+    <footer>
+        <div class="footer__body">
+            <div class="footer__column">
+                <h3 class="footer__column-title">Біз әлеуметтік желіде</h3>
+                <ul class="footer__items">
+                    <li class="footer__item"><img src="img/inst.png"><a href="#" class="footer__link">Instagram</a></li>
+                    <li class="footer__item"><img src="img/youtube.png"><a href="#" class="footer__link">YouTube</a></li>
+                    <li class="footer__item"><img src="img/telegram.png"><a href="#" class="footer__link">Telegram</a></li>
+                    <li class="footer__item"><img src="img/tiktok.png"><a href="#" class="footer__link">TikTok</a></li>
+                </ul>
+            </div>
+            <div class="footer__column">
+                <h3 class="footer__column-title">Мекен-жайымыз</h3>
+                <ul class="footer__items">
+                    <li class="footer__item"><a href="https://goo.gl/maps/FbhGeSkeJ3RE8d8T9" target="_blank" class="footer__link">г.Алматы, Мауленова 92</a></li>
+                </ul>
+            </div>
+            <div class="footer__column">
+                <h3 class="footer__column-title">Контактілер</h3>
+                <ul class="footer__items">
+                    <li class="footer__item blue">+7 707 259 5500</li>
+                    <li class="footer__item blue">+7 707 159 5500</li>
+                    <li class="footer__item">in_sight@gmail.com</li>
+                </ul>
+            </div>
+            <div class="footer__column">
+                <h3 class="footer__column-title">Бізге жазыңыз</h3>
+                <ul class="footer__items">
+                    <li class="footer__item"><img src="img/whats.png">+7 707 259 5500</li>
+                </ul>
+            </div>
 
             
-            <footer>
-                <div class="footer-column">
-                  <h3>Біз әлеуметтік желіде</h3>
-                  <ul>
-                    <li><img src="img/inst.png">Instagram</li>
-                    <li><img src="img/youtube.png">YouTube</li>
-                    <li><img src="img/telegram.png">Telegram</li>
-                    <li><img src="img/tiktok.png">TikTok</li>
-                  </ul>
-                </div>
-                <div class="footer-column">
-                  <h3>Мекен-жайымыз</h3>
-                  <ul>
-                    <li>г.Алматы, Мауленова 92</li>
-                  </ul>
-                </div>
-                <div class="footer-column">
-                  <h3>Контактілер</h3>
-                  <ul>
-                    <li class="number">+7 707 259 5500</li>
-                    <li class="number">+7 707 159 5500</li>
-                    <li>in_sight@gmail.com</li>
-                  </ul>
-                </div>
-                <div class="footer-column">
-                  <h3>Бізге жазыңыз</h3>
-                  <ul>
-                    <li><img src="img/whats.png">+7 707 259 5500</li>
-                  </ul>
-                </div>
-              </footer>
-              <hr class="line">
         </div>
+        <hr class="footer__line">
+    </footer>
 
 
-        <div class="modal" id="modal">
-          <div class="modal-content">
-            <div class="button_cont"><span class="close">&times;</span></div>
-            <div class="container">
-              <div>
-                  <h3>Мамандықты таңдау</h3>
-  
-                  <div class="card4">
-                      <div class="accordion2">
-                          <div class="accordion-item2" id="accordion-item2">
-                              <div class="accordion-header2">
-                                  <div class="order">
-                                      <h2>1</h2>
-                                      <p class="poster">Мамандықты таңдау</p>
-                                  </div>
-                                  <img src="img/Vector.png" alt="" class="arrow2">
-                              </div>
-                          </div>
-                          <div class="accordion-item2">
-                              <div class="accordion-header2">
-                                  <div class="order">
-                                      <h2>2</h2>
-                                      <p class="poster">Мамандықты таңдау</p>
-                                  </div>
-                                  <img src="img/Vector.png" alt="" class="arrow2">
-                              </div>
-                          </div>
-                          <div class="accordion-item2">
-                              <div class="accordion-header2">
-                                  <div class="order">
-                                      <h2>3</h2>
-                                      <p class="poster">Мамандықты таңдау</p>
-                                  </div>
-                                  <img src="img/Vector.png" alt="" class="arrow2">
-                              </div>
-                          </div>
-                          <div class="accordion-item2">
-                              <div class="accordion-header2">
-                                  <div class="order">
-                                      <h2>4</h2>
-                                      <p class="poster">Мамандықты таңдау</p>
-                                  </div>
-                                  
-                                  <img src="img/Vector.png" alt="" class="arrow2">
-                              </div>
-                          </div>
-                      </div>     
-                  </div> 
-                  <button class="btn3"><a href="page3.html">Нәтижені көру</a></button>
-              </div>
-              <div>
-                  <img src="img/cup.png" alt="" class="cup">
-              </div>
-          </div>
-              
-          </div>
-        </div>    
-        
-        
-        <div class="modal" id="modal2">
-          <div class="modal-content">
-              <div class="button_cont"><span class="close1">&times;</span></div>
-              <h2>Мамандықты таңдау</h2>
+    <div class="modal" id="modal">
+        <div class="modal__content">
+            <div class="modal__close-btn"><span class="close">&times;</span></div>
+            <div class="modal__main">
+                <div class="modal__left">
+                    <h3 class="modal__title">Мамандықты таңдау</h3>
 
-              <hr>
-              <div class="profession">
-                  <p>Математика және статистика</p>
-              </div>
-              <hr>
-              <div class="profession">
-                  <p>Математика және статистика</p>
-              </div>
-              <hr>
-              <div class="profession">
-                  <p>Математика және статистика</p>
-              </div>
-              <hr>
-              <div class="profession">
-                  <p>Математика және статистика</p>
-              </div>
-              <hr>
-              <div class="profession">
-                  <p>Математика және статистика</p>
-              </div>
-              <hr>
-              <div class="profession">
-                  <p>Математика және статистика</p>
-              </div>
-              <hr>
-          </div>
-      </div>
+                    <div class="modal__card card">
+                        <div class="modal__accordion">
+                            <div class="modal__accordion-item" id="modal__accordion-item">
+                                <div class="modal__accordion-header">
+                                    <div class="order">
+                                        <h2 class="order__number">1</h2>
+                                        <p class="poster">Мамандықты таңдау</p>
+                                    </div>
+                                    <img src="img/Vector.svg" alt="" class="arrow2">
+                                </div>
+                            </div>
+                            <div class="modal__accordion-item" id="modal__accordion-item">
+                                <div class="modal__accordion-header">
+                                    <div class="order">
+                                        <h2 class="order__number">2</h2>
+                                        <p class="poster">Мамандықты таңдау</p>
+                                    </div>
+                                    <img src="img/Vector.svg" alt="" class="arrow2">
+                                </div>
+                            </div>
+                            <div class="modal__accordion-item" id="modal__accordion-item">
+                                <div class="modal__accordion-header">
+                                    <div class="order">
+                                        <h2 class="order__number">3</h2>
+                                        <p class="poster">Мамандықты таңдау</p>
+                                    </div>
+                                    <img src="img/Vector.svg" alt="" class="arrow2">
+                                </div>
+                            </div>
+                            <div class="modal__accordion-item" id="modal__accordion-item">
+                                <div class="modal__accordion-header">
+                                    <div class="order">
+                                        <h2 class="order__number">4</h2>
+                                        <p class="poster">Мамандықты таңдау</p>
+                                    </div>
+                                    <img src="img/Vector.svg" alt="" class="arrow2">
+                                </div>
+                            </div>
+                        </div>     
+                    </div> 
+                    <a href="page3.html"></a><button class="modal__btn btn"  id="openModalBtn2">Нәтижені көру</button></a>
+                </div>
+                <div class="modal__cup">
+                    <img src="img/cup.png" alt="" class="cup">
+                </div>
+            </div> 
+        </div>
+    </div>    
 
+    <div class="modal" id="modal2">
+        <div class="modal__content other">
+            <div class="modal__close-btn"><span class="close">&times;</span></div>
+            <h2 class="modal__title">Мамандықты таңдау</h2>
 
-        <script src="scrypt.js"></script> 
-    </body>
+            <hr>
+            <div class="profession">
+                <p>Математика және статистика 1</p>
+            </div>
+            <hr>
+            <div class="profession">
+                <p>Математика және статистика 2</p>
+            </div>
+            <hr>
+            <div class="profession">
+                <p>Математика және статистика 3</p>
+            </div>
+            <hr>
+            <div class="profession">
+                <p>Математика және статистика 4</p>
+            </div>
+            <hr>
+            <div class="profession">
+                <p>Математика және статистика 5</p>
+            </div>
+            <hr>
+            <div class="profession">
+                <p>Математика және статистика 6</p>
+            </div>
+            <hr>
+        </div>
+    </div>
 
+    <div class="modal" id="modal3">
+        <div class="modal__content bigresult">
+            <div class="modal__close-btn"><span class="close">&times;</span></div>
+            <div class="modal__score">
+                <h1>100%</h1>
+                <h2>Мемлекеттік грантқа түсу ықтималдылығы</h2>
+            </div>
     
+            <div class="modal__container">
+                <div class="modal__result-item">
+                    <div class="modal__result-info">
+                        <p><span>1</span><span>Магистральдық желілер және инфрақұрылым</span></p>
+                        <p class="green">Код: B165</p>
+                    </div>
+
+                    <div class="modal__result-info2">
+                        <div>
+                            <img src="img/image 3.png" alt="image3" class="modal__result-img">
+                            <div>
+                                <h3 class="modal__info2-title">Логистика және көлік академиясы</h3>
+                                <p class="modal__info2-title green">Код: 019, жалпы грант</p>
+                                <p class="modal__info2-title green">Алматы қаласы, Шевченко көшесі, 97</p>
+                            </div>
+                        </div>
+                        
+                        <div class="modal__result-arrow">
+                            <img src="img/Vector3.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal__result-item">
+                    <div class="modal__result-info">
+                        <p><span>1</span><span>Магистральдық желілер және инфрақұрылым</span></p>
+                        <p class="green">Код: B165</p>
+                    </div>
+
+                    <div class="modal__result-info2">
+                        <div>
+                            <img src="img/image 3.png" alt="image3" class="modal__result-img">
+                            <div>
+                                <h3 class="modal__info2-title">Логистика және көлік академиясы</h3>
+                                <p class="modal__info2-title green">Код: 019, жалпы грант</p>
+                                <p class="modal__info2-title green">Алматы қаласы, Шевченко көшесі, 97</p>
+                            </div>
+                        </div>
+                        
+                        <div class="modal__result-arrow">
+                            <img src="img/Vector3.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="modal__result-item">
+                    <div class="modal__result-info">
+                        <p><span>1</span><span>Магистральдық желілер және инфрақұрылым</span></p>
+                        <p class="green">Код: B165</p>
+                    </div>
+
+                    <div class="modal__result-info2">
+                        <div>
+                            <img src="img/image 3.png" alt="image3"  class="modal__result-img">
+                            <div>
+                                <h3 class="modal__info2-title">Логистика және көлік академиясы</h3>
+                                <p class="modal__info2-title green">Код: 019, жалпы грант</p>
+                                <p class="modal__info2-title green">Алматы қаласы, Шевченко көшесі, 97</p>
+                            </div>
+                        </div>
+                        
+                        <div class="modal__result-arrow">
+                            <img src="img/Vector3.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="modal__result-item">
+                    <div class="modal__result-info">
+                        <p><span>1</span><span>Магистральдық желілер және инфрақұрылым</span></p>
+                        <p class="green">Код: B165</p>
+                    </div>
+
+                    <div class="modal__result-info2">
+                        <div>
+                            <img src="img/image 3.png" alt="image3" class="modal__result-img">
+                            <div>
+                                <h3 class="modal__info2-title">Логистика және көлік академиясы</h3>
+                                <p class="modal__info2-title green">Код: 019, жалпы грант</p>
+                                <p class="modal__info2-title green">Алматы қаласы, Шевченко көшесі, 97</p>
+                            </div>
+                        </div>
+                        
+                        <div class="modal__result-arrow">
+                            <img src="img/Vector3.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="modal__result-item">
+                    <div class="modal__result-info">
+                        <p><span>1</span><span>Магистральдық желілер және инфрақұрылым</span></p>
+                        <p class="green">Код: B165</p>
+                    </div>
+
+                    <div class="modal__result-info2">
+                        <div>
+                            <img src="img/image 3.png" alt="image3" class="modal__result-img">
+                            <div>
+                                <h3 class="modal__info2-title">Логистика және көлік академиясы</h3>
+                                <p class="modal__info2-title green">Код: 019, жалпы грант</p>
+                                <p class="modal__info2-title green">Алматы қаласы, Шевченко көшесі, 97</p>
+                            </div>
+                        </div>
+                        
+                        <div class="modal__result-arrow">
+                            <img src="img/Vector3.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+                
+                
+    
+            </div>
+            <div class="modal__btn-cont">
+                <button class="modal__btn2 btn" id="again">Қайтадан таңдау</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="notification_box">
+        <i class='bx bx-check'></i>
+            <div class="box_text">
+                <h3>Өтінім қабылданды</h3>
+                <p>Сіз тегін сабаққа өтініш бердіңіз</p>
+            </div>
+        <i class='bx bx-x' ></i>
+    </div>
+
+    <div class="notification_box">
+        <i class='bx bx-check'></i>
+            <div class="box_text">
+                <h3>Өтінім қабылданды</h3>
+                <p>Өтінім жіберілді, жауапты күтіңіз</p>
+            </div>
+        <i class='bx bx-x' ></i>
+    </div>
+
+    <script src="script.js"></script> 
+</body>
 </html>
-    
