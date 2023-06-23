@@ -192,23 +192,32 @@
                 <select class="analysis__select" name="subject1" id="subject1" required>
                   <option value="" disabled selected hidden>Бірінші бейіндік пән</option>
                   <option value="math">Математика</option>
-                  <option value="history">Тарих</option>
+                  <option value="history">Дүниежүзі тарихы</option>
                   <option value="biology">Биология</option>
-                  <option value="english">Шет тілі</option>
-                  <option value="literature">Оқыту тілі және әдебиет</option>
-                  <option value="geog">география</option>
-                  <option value="chemistry">Химия</option>
-                  <option value="art">Шығармашылық емтихан</option>
-                </select>
-                <select class="analysis__select" name="subject2" id="subject2" required>
-                  <option value="" disabled selected hidden>Екінші бейіндік пән</option>
-                  <option value="physics">Физика</option>
                   <option value="geog">География</option>
                   <option value="chemistry">Химия</option>
-                  <option value="history">Тарих</option>
                   <option value="english">Шет тілі</option>
-                  <option value="rights">Адам.Қоғам.Құқық</option>
+                  <option value="kazakh">Қазақ тілі</option>
+                  <option value="kr">Қазақ/Орыс тілі</option>
+                  <option value="art">Шығармашылық емтихан</option>
                 </select>
+                <select class="analysis__select" name="subject2" id="subject2" required disabled>
+                  <option value="" disabled selected hidden>Екінші бейіндік пән</option>
+                  <option value="physics">Физика</option>
+                  <option value="cs">Информатика</option>
+                  <option value="geog">География</option>
+                  <option value="chemistry">Химия</option>
+                  <option value="biology">Биология</option>
+                  <option value="history">Дүниежүзі тарихы</option>
+                  <option value="english">Шет тілі</option>
+                  <option value="rights">Құқық негіздері</option>
+                  <option value="kazakhlit">Қазақ әдебиеті</option>
+                  <option value="krlit">Қазақ/Орыс әдебиеті</option>
+                  <option value="art">Шығармашылық емтихан</option>
+                </select>
+
+                <p class="error_message2">Екі пәнді де таңдаңыз</p>
+
                 <div class="analysis__quota">
                   <input class="analysis__checkbox" type="checkbox"/>
                   <p class="analysis__checkbox-text">Ауыл квотасы</p>
@@ -454,6 +463,8 @@
                             </div>
                         </div>     
                     </div> 
+
+                    <p class="error_message3">Барлық мамандықтарды таңдаңыз</p>
                     <a href="page3.html"></a><button class="modal__btn btn"  id="openModalBtn2">Нәтижені көру</button></a>
                 </div>
                 <div class="modal__cup">
@@ -469,30 +480,10 @@
             <h2 class="modal__title">Мамандықты таңдау</h2>
 
             <hr>
-            <div class="profession">
-                <p>Математика және статистика 1</p>
+            <div class="scrollable" id="professions">
+                
             </div>
-            <hr>
-            <div class="profession">
-                <p>Математика және статистика 2</p>
-            </div>
-            <hr>
-            <div class="profession">
-                <p>Математика және статистика 3</p>
-            </div>
-            <hr>
-            <div class="profession">
-                <p>Математика және статистика 4</p>
-            </div>
-            <hr>
-            <div class="profession">
-                <p>Математика және статистика 5</p>
-            </div>
-            <hr>
-            <div class="profession">
-                <p>Математика және статистика 6</p>
-            </div>
-            <hr>
+            
         </div>
     </div>
 
@@ -500,123 +491,51 @@
         <div class="modal__content bigresult">
             <div class="modal__close-btn"><span class="close">&times;</span></div>
             <div class="modal__score">
-                <h1>100%</h1>
+                
                 <h2>Мемлекеттік грантқа түсу ықтималдылығы</h2>
             </div>
     
             <div class="modal__container">
                 <div class="modal__result-item">
                     <div class="modal__result-info">
-                        <p><span>1</span><span>Магистральдық желілер және инфрақұрылым</span></p>
-                        <p class="green">Код: B165</p>
+                        <p><span>1</span><span class="poster2">Магистральдық желілер және инфрақұрылым</span></p>
+                        <p class="code green">Код: B165</p>
                     </div>
 
-                    <div class="modal__result-info2">
-                        <div>
-                            <img src="img/image 3.png" alt="image3" class="modal__result-img">
-                            <div>
-                                <h3 class="modal__info2-title">Логистика және көлік академиясы</h3>
-                                <p class="modal__info2-title green">Код: 019, жалпы грант</p>
-                                <p class="modal__info2-title green">Алматы қаласы, Шевченко көшесі, 97</p>
-                            </div>
-                        </div>
-                        
-                        <div class="modal__result-arrow">
-                            <img src="img/Vector3.svg" alt="">
-                        </div>
+                    <div class="modal__result-persent">
+                        <h2 class="res">100%</h2>
                     </div>
                 </div>
-
                 <div class="modal__result-item">
                     <div class="modal__result-info">
-                        <p><span>1</span><span>Магистральдық желілер және инфрақұрылым</span></p>
-                        <p class="green">Код: B165</p>
+                        <p><span>2</span><span class="poster2">Магистральдық желілер және инфрақұрылым</span></p>
+                        <p class="code green">Код: B165</p>
                     </div>
 
-                    <div class="modal__result-info2">
-                        <div>
-                            <img src="img/image 3.png" alt="image3" class="modal__result-img">
-                            <div>
-                                <h3 class="modal__info2-title">Логистика және көлік академиясы</h3>
-                                <p class="modal__info2-title green">Код: 019, жалпы грант</p>
-                                <p class="modal__info2-title green">Алматы қаласы, Шевченко көшесі, 97</p>
-                            </div>
-                        </div>
-                        
-                        <div class="modal__result-arrow">
-                            <img src="img/Vector3.svg" alt="">
-                        </div>
+                    <div class="modal__result-persent">
+                        <h2 class="res">100%</h2>
                     </div>
                 </div>
-                
                 <div class="modal__result-item">
                     <div class="modal__result-info">
-                        <p><span>1</span><span>Магистральдық желілер және инфрақұрылым</span></p>
-                        <p class="green">Код: B165</p>
+                        <p><span>3</span><span class="poster2">Магистральдық желілер және инфрақұрылым</span></p>
+                        <p class="code green">Код: B165</p>
                     </div>
 
-                    <div class="modal__result-info2">
-                        <div>
-                            <img src="img/image 3.png" alt="image3"  class="modal__result-img">
-                            <div>
-                                <h3 class="modal__info2-title">Логистика және көлік академиясы</h3>
-                                <p class="modal__info2-title green">Код: 019, жалпы грант</p>
-                                <p class="modal__info2-title green">Алматы қаласы, Шевченко көшесі, 97</p>
-                            </div>
-                        </div>
-                        
-                        <div class="modal__result-arrow">
-                            <img src="img/Vector3.svg" alt="">
-                        </div>
+                    <div class="modal__result-persent">
+                        <h2 class="res">100%</h2>
                     </div>
                 </div>
-                
                 <div class="modal__result-item">
                     <div class="modal__result-info">
-                        <p><span>1</span><span>Магистральдық желілер және инфрақұрылым</span></p>
-                        <p class="green">Код: B165</p>
+                        <p><span>4</span><span class="poster2">Магистральдық желілер және инфрақұрылым</span></p>
+                        <p class="code green">Код: B165</p>
                     </div>
 
-                    <div class="modal__result-info2">
-                        <div>
-                            <img src="img/image 3.png" alt="image3" class="modal__result-img">
-                            <div>
-                                <h3 class="modal__info2-title">Логистика және көлік академиясы</h3>
-                                <p class="modal__info2-title green">Код: 019, жалпы грант</p>
-                                <p class="modal__info2-title green">Алматы қаласы, Шевченко көшесі, 97</p>
-                            </div>
-                        </div>
-                        
-                        <div class="modal__result-arrow">
-                            <img src="img/Vector3.svg" alt="">
-                        </div>
+                    <div class="modal__result-persent">
+                        <h2 class="res">100%</h2>
                     </div>
                 </div>
-                
-                <div class="modal__result-item">
-                    <div class="modal__result-info">
-                        <p><span>1</span><span>Магистральдық желілер және инфрақұрылым</span></p>
-                        <p class="green">Код: B165</p>
-                    </div>
-
-                    <div class="modal__result-info2">
-                        <div>
-                            <img src="img/image 3.png" alt="image3" class="modal__result-img">
-                            <div>
-                                <h3 class="modal__info2-title">Логистика және көлік академиясы</h3>
-                                <p class="modal__info2-title green">Код: 019, жалпы грант</p>
-                                <p class="modal__info2-title green">Алматы қаласы, Шевченко көшесі, 97</p>
-                            </div>
-                        </div>
-                        
-                        <div class="modal__result-arrow">
-                            <img src="img/Vector3.svg" alt="">
-                        </div>
-                    </div>
-                </div>
-                
-                
-    
             </div>
             <div class="modal__btn-cont">
                 <button class="modal__btn2 btn" id="again">Қайтадан таңдау</button>

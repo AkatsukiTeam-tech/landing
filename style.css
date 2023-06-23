@@ -419,6 +419,7 @@ body{
     font-size: 1.4rem;
 }
 
+
 .analysis__select{
     width: 100%;
     margin-right: 5%;
@@ -426,7 +427,10 @@ body{
     padding: 3% 5%;
     border-radius: 5px;
     border: none;
+    
 }
+
+
 
 .analysis__quota{
     display: flex;
@@ -672,6 +676,20 @@ body{
     display: none;
     color: red;
 }
+.error_message2{
+    font-size: 1rem;
+    margin: 0 3%;
+    text-align: center;
+    display: none;
+    color: red;
+}
+.error_message3{
+    font-size: 1rem;
+    margin: 0 10%;
+    text-align: center;
+    display: none;
+    color: red;
+}
 
 .dotes {
     height: 0.8rem;
@@ -863,7 +881,10 @@ footer {
     margin-right: 3%;
     font-size: 1.6rem;
 }
-
+.scrollable {
+    overflow-y: scroll;
+    height: 80%;
+}
 
 
 .modal__accordion-item {
@@ -926,8 +947,8 @@ footer {
 /* modal3 */
 
 .bigresult{
-    width: 900px;
-    height: 1700px;
+    width: 800px;
+    height: 500px;
     padding: 2%;
 }
 
@@ -949,8 +970,27 @@ footer {
 .modal__result-item{
     border-bottom: 1px solid #E1DDDD;
     margin-bottom: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
+
+.modal__result-persent{
+    width: 15%;
+}
+.modal__result-info{
+    width: 100%;
+}
+.modal__result-info p:first-child{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: 100%;
+}
+.modal__result-persent h2{
+    font-size: 2.5rem;
+}
 .modal__result-info span:first-child{
     font-size: 2rem;
     margin-right: 2%;
@@ -967,63 +1007,14 @@ footer {
     font-size: 1.2rem;
 }
 
-.modal__result-info2{
-    padding: 2%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-left: 2%;
-    margin-bottom:2%;
+
+.modal__btn2{
+    width: 80%;
 }
-
-.modal__result-info2 div:first-child{
-    display: flex;
-    align-items: center;
-    justify-content: left;
-
-    width: 100%;
-}
-
-.modal__result-info2 div:first-child div{
-    margin-left: 4%;
-}
-.modal__result-img{
-    width: 20%;
-}
-
-.modal__info2-title{
-    font-size: 1.5rem;
-}
-.modal__info2-under{
-    font-size: 1.3rem;
-}
-
-.modal__result-arrow{
-    background-color: #566DF6;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1.5%;
-    border-radius: 50%;
-    cursor: pointer;
-}
-
-
-.modal__result-arrow img{
-    height: 150%;
-    width: 150%;
-}
-
-
-
 .modal__btn-cont{
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.modal__btn2{
-    width: 80%;
 }
 
 .notification_box{
@@ -1170,11 +1161,21 @@ footer {
     }
     .bigresult{
         width: 600px;
-        height: 1300px;
+        height: 450px;
     }
-    .modal__score h1{
-        font-size: 3.5rem;
+    .modal__result-info span:first-child{
+        font-size: 1.8rem;
+        margin-right: 2%;
     }
+    
+    .modal__result-info span:last-child{
+        font-size: 1.3rem;
+    }
+    
+    .modal__result-persent h2{
+        font-size: 2rem;
+    }
+
 
     .notification_box{
         width: 360px;
@@ -1295,11 +1296,21 @@ footer {
         font-size: 1.3rem;
     }
     .bigresult{
-        width: 600px;
-        height: 1300px;
+        width: 500px;
+        height: 400px;
     }
-    .modal__score h1{
-        font-size: 3.5rem;
+
+    .modal__result-info span:first-child{
+        font-size: 1.6rem;
+        margin-right: 2%;
+    }
+    
+    .modal__result-info span:last-child{
+        font-size: 1.1rem;
+    }
+    
+    .modal__result-persent h2{
+        font-size: 1.8rem;
     }
 
     
@@ -1497,17 +1508,28 @@ footer {
     }
     .bigresult{
         width: 400px;
-        height: 900px;
+        height: 450px;
     }
-    .modal__score h1{
-        font-size: 2rem;
+
+    .modal__result-info span:first-child{
+        font-size: 1.4rem;
+        margin-right: 2%;
     }
+    
+    .modal__result-info span:last-child{
+        font-size: 0.9rem;
+    }
+    
+    .modal__result-persent h2{
+        font-size: 1.6rem;
+    }
+
     .slider__carousel-item{
         min-width: 20%;
         width: calc(100%/6);
     }
     .modal__result-info span:first-child{
-        font-size: 1.6rem;
+        font-size: 1.4rem;
         margin-right: 2%;
     }
     
@@ -1537,6 +1559,8 @@ footer {
     .close {
         font-size: 1.5rem;
     }
+
+
 
     .notification_box{
         width: 300px;
@@ -1766,10 +1790,19 @@ footer {
     }
     .bigresult{
         width: 250px;
-        height: 700px;
+        height: 400px;
     }
-    .modal__score h1{
-        font-size: 1.8rem;
+    .modal__result-info span:first-child{
+        font-size: 1.2rem;
+        margin-right: 2%;
+    }
+    
+    .modal__result-info span:last-child{
+        font-size: 0.9rem;
+    }
+    
+    .modal__result-persent h2{
+        font-size: 1rem;
     }
     .slider__carousel-item{
         min-width: 20%;
