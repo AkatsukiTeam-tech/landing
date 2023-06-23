@@ -360,7 +360,7 @@ var againBtn = document.getElementById('again');
 var closeBtn = document.getElementsByClassName('close')[0];
 var closeBtn1 = document.getElementsByClassName('close')[1];
 var closeBtn2 = document.getElementsByClassName('close')[2];
-
+var checkboxQuota = document.getElementById('checkbox');
 var professionItems = document.querySelectorAll(".profession");
 const posterItems = document.querySelectorAll(".poster");
 const resultItems = document.querySelectorAll(".poster2");
@@ -409,7 +409,11 @@ openModalBtn.addEventListener("click", () => {
   }else{
     errorTvFild.style.display = 'none';
     combiantion = `${subject1Select.value}-${subject2Select.value}`;
-    point = pointRange.value;
+    if(checkboxQuota.checked){
+      point = Math.ceil(parseInt(pointRange.value) + pointRange.value*0.1);
+    }else{
+      point = pointRange.value;
+    }
     console.log(point);
     console.log(combiantion);
     modal.style.display = 'block';
@@ -488,7 +492,6 @@ function fillModalInfo(){
   professionItems.forEach((profession, index) => {
     profession.addEventListener("click", () => {
       modal2.style.display = 'none';
-      console.log('нажал на профессию');
       const selectedProfession = profession.innerHTML;
       const selectedPoster = posterItems[ind];
       const selectedPoster2 = resultItems[ind];
