@@ -1,3 +1,20 @@
+var modal = document.getElementById('modal');
+var modal2 = document.getElementById('modal2');
+var modal3 = document.getElementById('modal3');
+var openModalBtn = document.getElementById('openModalBtn');
+var openModalBtn2 = document.getElementById('openModalBtn2');
+var againBtn = document.getElementById('again');
+var closeBtn = document.getElementsByClassName('close')[0];
+var closeBtn1 = document.getElementsByClassName('close')[1];
+var closeBtn2 = document.getElementsByClassName('close')[2];
+var checkboxQuota = document.getElementById('checkbox');
+var professionItems = document.querySelectorAll(".profession");
+const posterItems = document.querySelectorAll(".poster");
+const resultItems = document.querySelectorAll(".poster2");
+const arrowItems = document.querySelectorAll(".arrow2");
+var ind;
+
+
 
 // accordion
 
@@ -229,6 +246,14 @@ subject2Select.addEventListener('change', function(){
   });
 });
 
+checkboxQuota.addEventListener('change', function(){
+  arrowItems.forEach((arrow, index) => {
+    arrow.classList.remove("active");
+    posterItems[index].innerHTML = "Мамандықты таңдау";
+    arrow.src = "img/Vector.svg";
+  });
+});
+
 subject1Select.addEventListener('change', function() {
     subject2Select.disabled = false;
     subject2Select.selectedIndex = 0;
@@ -351,21 +376,7 @@ subject1Select.addEventListener('change', function() {
 
 // modal
 
-var modal = document.getElementById('modal');
-var modal2 = document.getElementById('modal2');
-var modal3 = document.getElementById('modal3');
-var openModalBtn = document.getElementById('openModalBtn');
-var openModalBtn2 = document.getElementById('openModalBtn2');
-var againBtn = document.getElementById('again');
-var closeBtn = document.getElementsByClassName('close')[0];
-var closeBtn1 = document.getElementsByClassName('close')[1];
-var closeBtn2 = document.getElementsByClassName('close')[2];
-var checkboxQuota = document.getElementById('checkbox');
-var professionItems = document.querySelectorAll(".profession");
-const posterItems = document.querySelectorAll(".poster");
-const resultItems = document.querySelectorAll(".poster2");
-const arrowItems = document.querySelectorAll(".arrow2");
-var ind;
+
 
 posterItems.forEach((poster, index) => {
   poster.addEventListener("click", () => {
@@ -681,4 +692,6 @@ function hideNotification2() {
 
 closeIcon.addEventListener('click', hideNotification);
 closeIcon2.addEventListener('click', hideNotification);
+
+
 
